@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/surveyStyle.css" />
+  <title>Stranger Danger Survey</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-danger textControl">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">StrangerDanger</a>
+      <!--^^Maybe set an image here^^-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamTarget"
+        aria-controls="hamTarget" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="hamTarget">
+        <div class="navbar-nav">
+          <a id="homePage" class="nav-link mx-3" aria-current="page" href="index.html">Home</a>
+          <a id="createProfile" class="mx-3 nav-link" href="index.html">Create Profile</a>
+
+          <a id="dangerousSurvey" class="mx-3 nav-link active" href="#">Dangerous Survey</a>
+          <a id="combatibleMatches" class="mx-3 nav-link" href="#">Combatibale Matches</a>
+          <!-- combat match needs a log-in for returning profiles with err for not found ones -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="friendsCount surveyText d-flex flex-row-reverse mt-3">
+      <!-- this is for count of people online -->
+    </div>
+
+    <div class="surveyIntro">
+      <h1>Welcome to our Survey</h1>
+      <p class="surveyText px-3">We are gonna ask a series of 10 question and you will answer them on a scale 1 to 5.
+        5 being you strongly agree and 1 being you grossly agree.</p>
+      <p class="surveyText px-3">When this is complete, you will be prompted to double check your answer. Upon
+        completion you will be compared with others online and your match will be returned.</p>
+      <p class="surveyText px-3">Feel free to correct your answer at anytime while still on the same question. You
+        must also click the "Next Question" to progress.</p>
+      <h3 class="text-danger"><a class="text-reset toSurvey" href="#">Continue to Survey</a></h3>
+    </div>
+
+    <!-- correction box for survey -->
+    <div class="pickPlease">
+      <p class="text-center mt-4">You have to pick a number before<br>continuing, please</p>
+      <div class="d-flex justify-content-center mt-3">
+        <button id="ok" class="btn btn-sm btn-outline-primary" type="button">OK</button>
+      </div>
+    </div>
+
+    <div class="survey row">
+      <div class="questionsAsked surveyText d-flex justify-content-center">
+        <!-- here to show question -->
+      </div>
+      <div class="buttonController d-flex justify-content-evenly mt-5">
+        <button class="btn btn-lg btn-outline-danger one shadowControl grab" value="1" type="button">1</button>
+        <button class="btn btn-lg btn-outline-danger two shadowControl grab" value="2" type="button">2</button>
+        <button class="btn btn-lg btn-outline-danger three shadowControl grab" value="3" type="button">3</button>
+        <button class="btn btn-lg btn-outline-danger four shadowControl grab" value="4" type="button">4</button>
+        <button class="btn btn-lg btn-outline-danger five shadowControl grab" value="5" type="button">5</button>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <button class="next btn btn-lg btn-outline-success mt-5 grab" value="again" type="button">Next Question</button>
+      </div>
+    </div>
+
+    <div class="verifySurvey">
+      <div class="row justify-content-end">
+        <div class="row mt-0">
+          <button class="retake btn btn-lg btn-outline-success col-3" type="button">Retake Survey</button>
+          <button class="continueToMatch btn btn-lg btn-outline-primary col-3 offset-6" type="button">Continue to
+            Match</button>
+        </div>
+        <p class="surveyText  d-flex flex-row-reverse mt-3">Retaking the Survey will start you completely over on the
+          questionaire.</p>
+      </div>
+    </div>
+
+
+    <div class="matchingUp">
+      <div class="showsMatch d-flex justify-content-center mt-0">
+        <!-- here for showing current match -->
+      </div>
+
+      <div class="d-flex justify-content-around mt-5">
+        <button class="addProfile btn btn-lg btn-outline-primary col-3" type="button">Add your Profile</button>
+        <button class="retake btn btn-lg btn-outline-success col-3" type="button">Retake Survey</button>
+      </div>
+      <div class="surveyText">
+        <h3>Add your Profile</h3>
+        <p> Allows you to add your profile to our data base of individuals. This inables others to compare your score
+          with theirs to find potiental matches</p>
+        <h3>Retake Survey</h3>
+        <p>This gives you a chance to go back and change your answers to get a different match</p>
+      </div>
+    </div>
+
+    <!--end matching up-->
+    <div class="tryThis">
+      <div class="thxU d-flex justify-content-center flex-wrap surveyText">
+        <!-- here for placement -->
+        <h3>Finished</h3>
+        <p>This allows you to completely discard your current profile and will take you back to the home page.</p>
+      </div>
+      <!-- <div class="surveyText"> -->
+      <!-- </div> -->
+      <div class="d-flex justify-content-end mt-5">
+        <button class="finish btn btn-lg btn-outline-secondary col-3" type="button">Finished</button>
+      </div>
+    </div>
+    <!--end of thank you-->
+
+  </div>
+  <!--end of container-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="./js/surveyFunction.js"></script>
+  <script src="./js/survey.js"></script>
+</body>
+
+</html>

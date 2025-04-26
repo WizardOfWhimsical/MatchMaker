@@ -3,7 +3,7 @@ import morgan from "morgan"
 import { resolve } from "path"
 import { writeFile, readFile } from "fs/promises"
 import config from "#config";
-// import compareUsers from "#compare"
+import compare from "#compare"
 
 const app = express()
 
@@ -33,7 +33,7 @@ app.get("/count", (req, res)=>{
 
 app.post("/compareProfile", (req, res)=>{
   let me = req.body;
-  let bestMatch = compareUsers(me, friends);
+  let bestMatch = compare(me, friends);
   res.json(bestMatch);
 })
 

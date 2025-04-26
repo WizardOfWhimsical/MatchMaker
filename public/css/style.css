@@ -1,0 +1,84 @@
+/* here is the css for the homepage */
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .textControl {
+    font:
+      italic small-caps 24px/1.25em "Fira Sans",
+      serif;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.35rem;
+  }
+  body {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 228, 225, 0.5),
+        95%,
+        transparent
+      ),
+      url(./imgAsset/hearts.background.svg);
+    background-size: 100% auto;
+  }
+  .bg-danger {
+    --bs-bg-opacity: 0.5 !important;
+  }
+  h1 {
+    font: italic small-caps bold 2.5em/2em serif;
+    text-shadow: 3px 3px rgb(238, 162, 174);
+  }
+  h2 {
+    font: italic small-caps bold 2em/1.75em serif;
+    text-shadow: 2px 3px rgb(238, 162, 174);
+  }
+  h3 {
+    font: italic small-caps bold 1.75em/1.5em serif;
+    text-shadow: 1px 2px rgb(245, 128, 146);
+  }
+  .fancyText p {
+    font: italic small-caps bold 20px/1.25em cursive;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.35rem;
+    padding-left: 30px;
+    text-shadow:  1px 1px rgb(245, 147, 147);
+  }
+  footer{
+    position: static;
+      margin-top: 20%;
+  }
+  .row{
+    margin-top: 10%;
+      height: 30%;
+  }
+  img{
+    /* min-width: 25px; */
+    max-width: 175px;
+  }
+  .grab:hover{
+    cursor: grab;
+  
+  }
+  .grab:active{
+    cursor: grabbing;
+  }
+  .img:hover{
+    background:linear-gradient( transparent, 85%, rgb(241, 100, 241));
+    border-radius: 15px;
+  }
+  .logInBox{
+    position: absolute;
+    padding: 15px;
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    height: 200px;
+    border: 3px solid rgb(66, 8, 8);
+    border-radius: 10px;
+    box-shadow: 4px 5px 7px rgb(226, 60, 226);
+    background-color:rgba(192, 65, 124, 0.4);
+  }
+  .User{
+    color: rgb(35, 156, 35);
+  }

@@ -8,8 +8,9 @@
     "start": "nodemon server.js"
   },
   "imports": {
-    "#config": "./public/js/config.js"
-  },
+    "#config": "./public/js/config.js",
+    "#compare":"./serverSide.js"
+    },
   "keywords": [],
   "author": "Stephen R. Lewis",
   "license": "ISC",

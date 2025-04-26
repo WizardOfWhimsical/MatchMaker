@@ -1,0 +1,75 @@
+/* here is the css for the survey */
+@import url(./style.css);
+
+
+.surveyText {
+    font:
+      italic 24px/1.25em cursive;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.35rem;
+    text-shadow:  1px 1px rgb(245, 147, 147);
+  }
+.pickPlease{
+  position: absolute;
+  padding: 20px;
+  top: 30%;
+  left: 40%;
+  width: 400px;
+  height: 200px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color:rgba(192, 65, 124, 0.4);
+}
+li{
+  padding: 8px 0;
+}
+.friendsCount{
+  font-size: 16px !important;
+  font-weight: bolder;
+}
+.showsMatch img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 4px 5px 7px rgb(243, 185, 37);
+}
+.shadowControl{
+  color: rgba(18, 22, 18, 0.493);
+  text-shadow: 2px 2px 3px rgba(192, 65, 124);
+  background-image: linear-gradient(to top left,
+                                      rgba(230, 43, 43, 0.685),
+                                     30%,
+                                      rgba(180, 20, 132, 0.418));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.726),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.next, .retake{
+  color: #177c4d;
+  text-shadow: 2px 2px 3px rgba(104, 36, 230, 0.603);
+  background-image: linear-gradient(to top left,
+                                      rgba(241, 238, 40, 0.712),
+                                     30%,
+                                      rgba(245, 23, 178, 0.295));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.726),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.continueToMatch, .addProfile{
+  text-shadow: 2px 2px 3px rgba(50, 199, 58, 0.644);
+  background-image: linear-gradient(to top left,
+                                      rgba(238, 37, 37, 0.484),
+                                     50%,
+                                      rgba(245, 210, 53, 0.615));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.726),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.finish{
+  /* color */
+  text-shadow: 2px 2px 3px rgba(50, 199, 58, 0.644);
+  background-image: linear-gradient(to top left,
+                                      rgb(243, 185, 37, 0.484),
+                                     50%,
+                                      rgba(245, 123, 53, 0.615));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.726),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
