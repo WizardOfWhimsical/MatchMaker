@@ -1,5 +1,0 @@
-KEY
-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
-username:
-WizardOfWhimsical
-does anything register in here
