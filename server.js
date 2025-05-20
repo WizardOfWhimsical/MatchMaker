@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 app.use(morgan("dev"));
-app.use(express.static("./public"));
+app.use(express.static("./docs"));
 
 app.listen(config.port, () => {
     console.log(`Listening @ ${config.port}`);
@@ -22,11 +22,13 @@ let friends;
 
 
 readFile(friendsPath, "utf8")
-.then( (r) => {
+  .then((r) => {
+  console.log("reading file")
 friends = JSON.parse(r)
 })
 
 app.get("/count", (req, res)=>{
+  console.log("hiting in the server")
   res.type("text/plain")
   res.send(`${friends.length}`)
 })
