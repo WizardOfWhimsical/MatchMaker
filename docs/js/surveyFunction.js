@@ -37,11 +37,11 @@ function activeState(num) {
   }
   
   function heresYourMatch(yourMatch) {
-    $(".showsMatch").prepend(`<div class="funkyPrint">
-  <h1 class="text-center">${yourMatch.name}</h1>
-  <img class="text-center" src="${yourMatch.photo}" alt="Your Match">
+  $(".showsMatch").prepend(`<div class="funkyPrint">
+    <h1 class="text-center">${yourMatch.name}</h1>
+    <img class="text-center" src="${yourMatch.photo}" alt="Your Match" onerror="this.src='https://via.placeholder.com/150?text=%F0%9F%98%8A';">
   </div>`);
-  }
+}
   
   function switchingActiveToMatches() {
     $("#dangerousSurvey").removeClass("active");
@@ -59,4 +59,3 @@ function activeState(num) {
   <p>Your log-in name is ${valuedPerson.name}, you will want this for when outher members contact you. Have a nice day!</p>
   `)
   };
-  
