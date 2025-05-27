@@ -27,11 +27,11 @@ readFile(friendsPath, "utf8")
 friends = JSON.parse(r)
 })
 
-app.get("/count", (req, res)=>{
-  console.log("hiting in the server")
-  res.type("text/plain")
-  res.send(`${friends.length}`)
-})
+// app.get("/count", (req, res)=>{
+//   console.log("hiting in the server")
+//   res.type("text/plain")
+//   res.send(`${friends.length}`)
+// })
 
 app.post("/compareProfile", (req, res)=>{
   let me = req.body;

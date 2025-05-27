@@ -1,8 +1,8 @@
-fetch("/count")
-  .then((r) => r.text())
-  .then((r) => {
-    $(".friendsCount").append(`<p>We have ${r} online</p>`);
-  });
+// fetch("/count")
+//   .then((r) => r.text())
+//   .then((r) => {
+//     $(".friendsCount").append(`<p>We have ${r} online</p>`);
+//   });
 
   /*SIMPLE VARIBLES*/
 let personProfile = {}; //to store and manipulate
